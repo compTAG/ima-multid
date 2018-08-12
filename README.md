@@ -7,8 +7,10 @@ TODO: add homework here!
 ## References
 
 ### Day 1
-* (Bootstrap Paper)[https://arxiv.org/abs/1311.0376]
+* [Bootstrap Paper](https://arxiv.org/abs/1311.0376)
+* [Brainstorm Padlet](TODO) TODO: add link
 
 ### Day 2
 * (Functional Summaries of Persistence
   Diagrams)[https://arxiv.org/abs/1804.01618]
+* [Descriptors Padlet](TODO) TODO: add link
