@@ -33,31 +33,42 @@
 }
 
 \frame{
-    \todo{revise these questions perhaps}
-    \begin{columns}
-        \column{.45\textwidth}
+    \begin{block}{\center{What questions do we ask in data anaylsis?}}
+        \pause
+    \begin{itemize}
+        \item Think! Write down one question (2 min) \pause
+        \item Pair! Share with partner, and add more questions to your list (5
+            min) \pause
+        \item Share! Raise hands please! (5 min) \pause
+        \item More ideas? \url{samuel.micka@msu.montana.edu}
+    \end{itemize}
+    \end{block}
+}
+
+\frame{
+    \frametitle{Data Analysis Questions}
         \begin{block}{Summarize and Analyze}
             \begin{itemize}
-                \item What is this shape?
-                \item How many components / populations?
-                \item Can we categorize? (Classification)
-                \item What are the parameters? (Inference)
-                \item Does the descriptor provide stable information?
+                \item What is this shape? How many components / populations?
+                    \pause
+                \item Can we categorize? (Classification) \pause
+                \item What are the parameters? (Inference: Point Estimation)
+                    \pause
+                \item How far do parameters likely lie from estimates?
+                    (Confidence Sets) \pause
+                \item Does the descriptor provide stable information? \pause
             \end{itemize}
         \end{block}
-
-        \pause
-        \column{.45\textwidth}
         \begin{block}{Compare}
             \begin{itemize}
-                \item Are these the same (in distribution)?
-                \item Has something changed?
-                \item Where is the change?
-                \item Which is bigger?
+                \item Are these the same (in distribution)? \pause
+                \item Has something changed?  If so, what has changed? \pause
+                \item Which is bigger? \pause
+                \item Can we retain the null hypothesis? (Inference: Hypothesis
+                    Testing) \pause
                 \item What is the relationship between $X$ and $Y$? (Regression)
             \end{itemize}
         \end{block}
-    \end{columns}
 }
 
 \frame{
@@ -65,11 +76,19 @@
 
     \pause
     \begin{block}{}
-        1. Which Descriptor best captures our data?
+        1. Which descriptor best captures our data?
+        \begin{itemize}
+            \item Descriptors
+            \item Confidence Sets
+        \end{itemize}
     \end{block}
 
     \pause
     \begin{block}{}
         2. How do we measure distance between descriptors?
+        \begin{itemize}
+            \item Distances
+            \item Clustering
+        \end{itemize}
     \end{block}
 }

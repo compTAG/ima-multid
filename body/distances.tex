@@ -7,7 +7,6 @@
     Distance Measures:\\
     Comparing Descriptors
 \end{block}
-
 }
 
 \frame{
@@ -65,19 +64,37 @@
     \begin{columns}
         \column{.45\textwidth}
         \centering
-%        \includegraphics[width=\textwidth]{qubbd/MDSlarge}
+            \only<1>{\includegraphics[height=1.9in]{stat/dgm-average}}%
+            \only<3>{\includegraphics[height=1.9in]{stat/dgm-average-opt1}}%
+            \only<4->{\includegraphics[height=1.9in]{stat/dgm-average-opt2}}%
         \column{.45\textwidth}
     \begin{block}{}
+        \onslide<5->{
         \begin{itemize}
             \item Bottleneck $d_{\infty}$.
+            \item Interleaving distance.
             \item Wasserstein $d_p$.
-            \item Erosion distance (A.\ Patel's dissertation).
-            \item Distances in function space.
+            \item Erosion distance.
         \end{itemize}
+    }
     \end{block}
+    \todo{add citations}
     \end{columns}
 }
 
 \frame{
-    \todo{maybe talk about clustering techniques here?}
+    \todo{add a slide about converting to function space + defer to tomorrow for
+    more details}
+}
+
+\frame{
+
+\begin{block}{}
+    \centering
+   Clustering
+\end{block}
+}
+
+\frame{
+    \todo{clustering techniques here}
 }
