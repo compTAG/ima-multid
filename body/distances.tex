@@ -23,7 +23,7 @@
 
 \frame{
     \frametitle{Distances Between Diagrams}
-    \begin{columns}
+    \begin{columns}%
         \column{.45\textwidth}
         \begin{block}{}
             \onslide<1->{
@@ -31,17 +31,17 @@
                     \item Bottleneck $d_{\infty}$.
                     \item Interleaving distance.
                     \item Wasserstein $d_p$.
-                    \item Erosion distance.
-                \end{itemize}
-            }
-        \end{block}
-
-        \pause
-        \begin{block}{Question}
+                    \item Erosion distance.%
+                \end{itemize}%
+            }%
+        \end{block}%
+%
+        \pause%
+        \begin{block}{Question}%
             Can we define a centroid / Fr\'echet mean?
-            $$ \arg\min_D \sum_i W_{\infty}(D,D_i)$$
-        \end{block}
-
+            $$ \arg\min_D \sum_i W^2_{\infty}(D,D_i)$$
+        \end{block}%
+%
             \pause
             \column{.45\textwidth}
         \begin{block}{}
@@ -63,12 +63,6 @@
 }
 
 \frame{
-    \todo{add a slide about converting to function space + defer to tomorrow for
-    more details}
-}
-
-
-\frame{
 \begin{block}{}
 \centering
  \only<1>{\includegraphics[width=.7\textwidth]{stat/sampling-dgms}}%
@@ -86,7 +80,24 @@
 }
 
 \frame{
-    \frametitle{Clustering Techniques}
-    \begin{block}{}
+    \frametitle{Clustering
+    \onslide<5->{... and Classification} }
+
+    \begin{block}{Clustering (Unsupervised Learning)}
+        \pause
+        \begin{itemize}
+            \item Heirarchical: agglomerative or divisive.\pause
+            \item $k$-means: NP-hard, so algorithms find a local minimum.
+            \item Distribution- and density-based clustering: e.g., DBSCAN.
+                \pause
+            \item Fuzzy clustering: membership is not binary.
+        \end{itemize}
+    \end{block}
+
+    \pause%
+    \begin{block}{Classification (Supervised Learning)}
+        input data (training sample): $D=\{(X_i,Y_i)\}_{i=1}^n$\\~\\
+        $k$-nn clustering: for new $X$, we predict $Y$ by majority vote of the
+        $k$ nearest neighbors of the covariates (features) in $D$.
     \end{block}
 }
