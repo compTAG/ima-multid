@@ -1,7 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The Problem:}
-\subsection{Qualitative Diagnosis and Prognosis}
+\section{Qualitative Diagnosis and Prognosis}
+\begin{frame}
+    \begin{block}{}
+        An Application to Prostate Cancer Diagnosis and Prognosis
+    \end{block}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -35,10 +39,10 @@
 \framesubtitle{Diagnosis}
 
 \centering
-    \only<1>{\includegraphics[width=\textwidth]{../FIGS/gleason/gleason-process-1}}%
-    \only<2>{\includegraphics[width=\textwidth]{../FIGS/gleason/gleason-process-2}}%
-    \only<3>{\includegraphics[width=\textwidth]{../FIGS/gleason/gleason-process-3}}%
-    \only<4->{\includegraphics[width=\textwidth]{../FIGS/gleason/gleason-process}}
+    \only<1>{\includegraphics[width=\textwidth]{gleason/gleason-process-1}}%
+    \only<2>{\includegraphics[width=\textwidth]{gleason/gleason-process-2}}%
+    \only<3>{\includegraphics[width=\textwidth]{gleason/gleason-process-3}}%
+    \only<4->{\includegraphics[width=\textwidth]{gleason/gleason-process}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,7 +54,7 @@
 \framesubtitle{How to Describe Glandular Architecture}
 
         \centering
-        \only<1->{\includegraphics[height=2.5in]{gleason-4}}
+        \only<1->{\includegraphics[height=2.5in]{gleason/gleason-4}}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,27 +68,26 @@
     \begin{columns}
         \column{.45\textwidth}
         \centering
-        \only<1>{\includegraphics[height=2in]{../FIGS/gleason/gleason}}
-        \only<2->{\includegraphics[height=2in]{../FIGS/gleason/epp-figure_1-4}}
+        \only<1>{\includegraphics[height=2in]{gleason/gleason}}
+        \only<2->{\includegraphics[height=2in]{gleason/epp-figure_1-4}}
         \column{.45\textwidth}
         \begin{block}{}
             \hangindent=1.5cm
             \hangafter=1
             \noindent
             Grade 1: well-defined, nicely packed
-             
-            \hangindent=1.5cm
-            \hangafter=1
-            \noindent
-            Grade 2: larger, more tissue,  less uniform
-        
 
             \hangindent=1.5cm
             \hangafter=1
             \noindent
-            Grade 3: less defined glands% 
+            Grade 2: larger, more tissue,  less uniform
+
+            \hangindent=1.5cm
+            \hangafter=1
+            \noindent
+            Grade 3: less defined glands%
             \only<1>{, some cribriform}
-            
+
             \hangindent=1.5cm
             \hangafter=1
             \noindent
@@ -107,6 +110,25 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\frame{
+\frametitle{Recent Updates to Gleason Grading}
+\framesubtitle{ISUP 2014}
+\begin{block}{'Bears Little Resemblance to the Original Gleason System'}
+\begin{itemize}
+ \item Rules set for particular glandular features.\pause
+ \item Grade group 1: Scores 1-6.
+ \item Grade group 2: Score 3+4.
+ \item Grade group 3: Score 4+3.
+ \item Grade group 4: Scores 8.
+ \item Grade group 5: Scores 9-10.\pause
+ \item What about tertiary patterns?
+ \item ... quantifying the amount of each pattern present?
+ \item ... reproducibility?
+\end{itemize}
+
+\end{block}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Learning to Grade}
@@ -114,100 +136,10 @@
     Pathologists and Clinicians}}
 
     \centering
-    \includegraphics[height=3in]{gleason-book}
+    \includegraphics[height=3in]{gleason/gleason-book}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Glandular Architecture}
-    \framesubtitle{Discrete-vs-Fused Glands}
-
-    \begin{columns}
-        \column{.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figure_2-284_fused}
-        \column{.45\textwidth}
-        \begin{block}{Gleason 3}
-            Discrete glands. 
-        \end{block}
-        \begin{block}{Gleason 4}
-            Presence of fused glands. 
-        \end{block}
-    \end{columns}
-    \only<1->{\footnotetext{Image source: Eppstein, \emph{The Gleason Grading
-  System}}}
-    
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Glandular Architecture}
-    \framesubtitle{Cribriform Pattern}
-
-    \begin{columns}
-        \column{.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figure_2-133-cribriform}
-        \column{.45\textwidth}
-        \begin{block}{Gleason 4}
-            {A gland with numerous small~holes.}
-        \end{block}
-    \end{columns}
-    \only<1->{\footnotetext{Image source: Eppstein, \emph{The Gleason Grading
-    System}}}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Glandular Architecture}
-    \framesubtitle{Glomeruloid Structures}
-
-    \begin{columns}
-        \column{.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{glomeroid}
-        \column{.45\textwidth}
-        \begin{block}{Gleason 3,4}
-            Intraluminal cribriform, single point of attachment.
-        \end{block}
-    \end{columns}
-    \only<1->{\footnotetext{Image source: 
-    \url{http://www.nature.com/modpathol/journal/v17/n3/fig_tab/3800050f9.html}
-    }}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Glandular Architecture}
-    \framesubtitle{Telescoping Glands}
-
-    \begin{columns}
-        \column{.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figure_2-215_telescoping}
-        \column{.45\textwidth}
-        \begin{block}{Gleason 3}
-            Telescoping (gland in gland) may mimic Glumeroid. 
-        \end{block}
-        \begin{block}{Gleason 4}
-            Actual glumeroid pattern. 
-        \end{block}
-    \end{columns}
-    \only<1->{\footnotetext{Image source: Eppstein, \emph{The Gleason Grading
-    System}}}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -217,8 +149,8 @@
     \begin{columns}
         \column{.45\textwidth}
         \centering
-        \includegraphics[height=1in]{gland}\\
-        \includegraphics[height=1in]{figure_2-4_packed}
+        \includegraphics[height=1in]{gleason/gleason3}\\
+        \includegraphics[height=1in]{gleason/gleason5}
         \column{.45\textwidth}
         \begin{block}{Gleason 1}
             Uniform distribution of gland size. Round.
@@ -234,5 +166,52 @@
     System}}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}<1>[label=simulated]
+    \frametitle{Simulated Data}
+    \framesubtitle{Wok with E.\ Berry, Y.C.\ Chen,  J.\ Cisewski-Kehe, S.\ Payne, A.\
+    Schenfisch, J.~Schoupbach , N.\ Stouffer.}
+
+    \begin{block}{}
+        \centering
+        \only<1>{\includegraphics[height=2.5in]{gleason/sil-mds-input}}%
+        \only<2->{\includegraphics[height=2.5in]{gleason/sil-mds}}%
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Simulated Data}
+
+    \begin{block}{}
+        \begin{itemize}
+            \item Training data: $2$k `glands', $500$ of each type
+            \item Distance / DTM filtration
+            \item Silhouette, $p=1$
+            \item Test set: $400$, with $100$ of each type
+            \item Remove labels from test set
+            \item knn classification, with $k=3$
+            \item $12\%$ classification error
+        \end{itemize}
+    \end{block}
+
+\end{frame}
+
+\againframe<1->{simulated}
+
+\begin{frame}
+    \frametitle{Real Data}
+    \framesubtitle{Work with J.Q.\ Brown, C.\ Wenk, P.\ Lawson, A.\ Scholl. In
+    submission.}
+
+    \begin{block}{}
+        \centering
+        \only<1>{\includegraphics[height=2in]{gleason/tsne_fig_hist}}
+    \end{block}
+\end{frame}
 
 
