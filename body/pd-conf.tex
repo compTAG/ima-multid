@@ -9,14 +9,6 @@ Analyzing Descriptors
 }
 
 \frame{
-\frametitle{Stat Tool 1: Confidence Sets}
-
-
-
-}
-
-
-\frame{
 \frametitle{Objective}
 \framesubtitle{~}
 
@@ -31,13 +23,13 @@ Analyzing Descriptors
     \begin{itemize}
         \item BTF, Lecci, Rinaldo, Wasserman, Balakrishnan, and Singh.
             Confidence sets for persistence diagrams. Annals of Stat., 2014.
-        \item Chazal, Lecci, BTF, Rinaldo, Singh, and Wasserman.
+        \item Chazal, BTF, Lecci, Rinaldo, Singh, and Wasserman.
             On the Bootstrap for Persistence
             Diagrams and Landscapes.
             Modeling and Analysis of Information Systems, 2013.
         \item Chazal, BTF, Lecci, Michel, Rinaldo, and Wasserman.
             Robust Topological Inference: Distance To a Measure and Kernel
-            Distance, JMLR, to appear. \todo{published}
+            Distance, JMLR 18(159):1--40, 2018.
     \end{itemize}
 \end{block}
 }
@@ -53,7 +45,7 @@ Analyzing Descriptors
         \column{.45\textwidth}
 
         \begin{block}{}
-            We have one sample: $\mathcal{S}_n = \{ X_1, \ldots, X_n\}$; $X_i \sim P$.
+            We have a point cloud sample: $\mathcal{S}_n = \{ X_1, \ldots, X_n\}$; $X_i \sim P$.
         \end{block}
 
         \pause
@@ -134,5 +126,33 @@ Analyzing Descriptors
 
 
 \frame{
-\todo{add a slide about Bootstraps + technical challenge}
+    \frametitle{Challenges}
+
+    \pause
+    \begin{columns}
+        \column{.45\textwidth}
+        \begin{block}{Techniques}
+            \begin{itemize}
+                \item Prove convergence rates. \pause
+                \item Determine suitable assumptions on input. \pause
+                \item Use the geometry of input (e.g., properties of an
+                    underlying smooth manifold). \pause
+            \end{itemize}
+        \end{block}
+
+        \column{.45\textwidth}
+        \begin{block}{Questions}
+            \begin{itemize}
+               \item These results are \emph{in the limit}. What $n$ is big
+                    enough? \pause
+                \item What confidence sets can we construct in the multi-d
+                    setting? \pause
+                \item What is the optimal threshold for particular
+                    filtrations? \pause
+                \item Power analysis: are the rejected points topologically
+                    insignificant? (Type II errors) \pause
+            \end{itemize}
+
+        \end{block}
+    \end{columns}
 }
