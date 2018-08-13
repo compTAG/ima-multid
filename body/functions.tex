@@ -12,7 +12,6 @@ Functional Summaries and Their Confidence Sets
 
 \frame{
     \frametitle{Applications (of Functional Summaries)}
-    \framesubtitle{Thanks, Lisbeth!}
 
 \begin{columns}
     \column{.45\textwidth}
@@ -30,7 +29,7 @@ Functional Summaries and Their Confidence Sets
             \item Two-sample Hypothesis Test
             \item Paired Hypothesis Test
             \item Clustering
-            \item Supervised Classification
+            \item Classification
         \end{itemize}
     \end{block}
 \end{columns}
@@ -50,14 +49,16 @@ Functional Summaries and Their Confidence Sets
 \frame{
 \frametitle{Persistence Landscapes}
 \framesubtitle{
-    \onslide<3->{    Bubenik. Statistical topological data analysis using persistence landscapes,
+    \onslide<3->{    Bubenik. Statistical Topological Data Analysis using
+    Persistence Landscapes.
 JMLR, 2015.}}
 
 \begin{center}
 \only<1>{\includegraphics[height=2in]{stat/persistence-dgm}}%
 \only<2>{\includegraphics[height=2in]{stat/persistence-dgm-dropped}}%
-\only<3>{\includegraphics[height=2in]{stat/persistence2-labeled}}%
-\only<4->{\includegraphics[height=2in]{stat/persistence-lscape}}%
+\only<3>{\includegraphics[height=2in]{stat/persistence-landscape}}%
+\only<4>{\includegraphics[height=2in]{stat/persistence-one-landscape}}%
+\only<5->{\includegraphics[height=2in]{stat/persistence-all-landscapes}}%
 \end{center}
 }
 
@@ -67,21 +68,19 @@ JMLR, 2015.}}
     \column{.45\textwidth}
     \begin{center}
 
-        \only<1>{\includegraphics[height=2.5in]{stat/persistence-one-landscape}}%
-        \only<2>{\includegraphics[height=2.5in]{stat/persistence-all-landscapes}}%
-        \only<3>{\includegraphics[height=2.5in]{stat/persistence2-labeled}}%
-        \only<4->{\includegraphics[height=2.5in]{stat/persistence-silhouette}}%
+        \only<1>{\includegraphics[height=2.5in]{stat/persistence-all-landscapes}}%
+        \only<2->{\includegraphics[height=2.5in]{stat/persistence-silhouette}}%
     \end{center}
     \column{.45\textwidth}
 
-    \only<2>{
+    \only<1>{
         \begin{block}{}
             $$\Lambda \colon \R \times \Z_{+} \to \R$$
             $$\Lambda_i(\cdot) := \Lambda(\cdot,i)$$
         \end{block}
     }
 
-    \only<4->{
+    \only<2->{
         \begin{block}{Weighted Silhouette}
             $$ \phi(t) = \frac{\sum_{i=1}^n w_i \Lambda_i(t) }{ \sum_{j=1}^n w_j} $$
         \end{block}
@@ -97,7 +96,7 @@ JMLR, 2015.}}
 
 }
 
-\frame<1->{
+\frame<1-2{
 \frametitle{Weak Convergence of Landscapes}
 \begin{columns}
  \column{.45\textwidth}
